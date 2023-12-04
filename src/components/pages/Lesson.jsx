@@ -11,7 +11,7 @@ const Lesson = () => {
   
   const colorSentences=getColorSentences();
   const numberSentences=getNumberSentences();
-  const number=getNumbers();
+  const numbers=getNumbers();
 
 
   const toggleSidebar = ()=>{
@@ -113,16 +113,6 @@ const Lesson = () => {
                 </ListGroup>
               ))}
             </section>
-
-
-<ReactAudioPlayer
-src="https://drive.google.com/uc?export=download&id=1v-uO7sllgagcHDALemEwzz7s1NMHkU-U"
-onPlay	
-controls
-/>
-{/* 
-https://drive.google.com/file/d/1v-uO7sllgagcHDALemEwzz7s1NMHkU-U/view?usp=sharing
-*/}
 
 
             <section id="chapter-5">
