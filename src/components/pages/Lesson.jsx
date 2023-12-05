@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { Container, Row, Col, ListGroup, Button } from 'react-bootstrap';
+import { Container, Row, Col, ListGroup, Button, Card } from 'react-bootstrap';
 import ReactAudioPlayer from 'react-audio-player';
 import getColorSentences from '../../utils/colorSentences.js';
 import getNumberSentences from '../../utils/numberSentences.js'
@@ -43,6 +43,8 @@ const Lesson = () => {
   return (
 <Container fluid>
       <Row>
+
+{/* Sidebar */}
         <Col lg={3} className={showSidebar ? 'd-lg-block' : 'd-none'}>
           <div className="bg-white p-3 position-fixed" style={{ height: '100vh', width: '200px' }}>
             <h2 className="mb-4">Lesson Chapters</h2>
@@ -56,6 +58,7 @@ const Lesson = () => {
           </div>
         </Col>
 
+{/* Begins Chapter1 */}
         <Col lg={showSidebar ? 9 : 12} xs={12}>
           <div className="p-3">
 
@@ -76,7 +79,7 @@ const Lesson = () => {
                 <li> black, white, gray </li>
             </section>
 
-
+{/* 
             <section id="chapter-3">
               <h2>Color Sentences</h2>
               {colorSentences.map((color, index) => (
@@ -91,14 +94,46 @@ const Lesson = () => {
                   </p>  
                 </ListGroup>
               ))}
-            </section>
+            </section> */}
+
+          <Container fluid>
+                <Row>
+                  {/* {colorSentences.map((color, index) => (
+                    <Col key={index} xs={12} sm={10} md={8} lg={6} style={{ border: '1px solid', margin:'1px' }} >
+                      <ListGroup>
+                        <p id={`#color-${index + 1}`}>{color.name}</p>
+                        <ReactAudioPlayer
+                          src={color.link}
+                          onPlay
+                          controls
+                          style={{ maxHeight: '25px', maxWidth: '270px' }}
+                        />
+                      </ListGroup>
+                    </Col>
+                  ))} */}
+
+                  {colorSentences.map((color, index) => (
+<Card style={{ width: '18rem', maxWidth: '325px'}}>
+      <Card.Img variant="top" src={color.photo} style={{ maxHeight: '150px', maxWidth: '150px', justifyContent: 'center'}} />
+      <Card.Body>
+        <Card.Title>{color.name}</Card.Title>
+        <Card.Text>
+        </Card.Text>
+        <ReactAudioPlayer
+            src={color.link}
+            onPlay
+            controls
+            style={{ maxHeight: '25px', maxWidth: '250px' }}
+          />
+      </Card.Body>
+    </Card>
+                  ))}
+
+                </Row>
+              </Container>
 
             <section id="chapter-4">
               <h2>Introduction to Number</h2>
-              <div>1</div>
-              <div>2</div>
-              <div>...</div>
-              <div>10</div>
 
               {numbers.map((number, index) => (
                 <ListGroup key={index}>
