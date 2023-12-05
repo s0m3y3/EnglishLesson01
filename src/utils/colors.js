@@ -1,57 +1,71 @@
 const color = [
     {
         "name":"Primary Color",
-        "link":""
+        "audio":"",
+        "photo":"",
     },
     {
         "name":"Red",
-        "link":""
+        "audio":"",
+        "photo":"",
     },
     {
         "name":"Blue",
-        "link":""
+        "audio":"",
+        "photo":"",
     },
     {
         "name":"Yellow",
-        "link":""
+        "audio":"",
+        "photo":"",
     },
     {
         "name":"Secondary Color",
-        "link":""
+        "audio":"",
+        "photo":"",
     },
     {
         "name":"Purple",
-        "link":""
+        "audio":"",
+        "photo":"",
     },
     {
         "name":"Green",
-        "link":""
+        "audio":"",
+        "photo":"",
     },
     {
         "name":"Orange",
-        "link":""
+        "audio":"",
+        "photo":"",
     },
     {
         "name":"Neutral Color",
-        "link":""
+        "audio":"",
+        "photo":"",
     },
     {
         "name":"Black",
-        "link":""
+        "audio":"",
+        "photo":"",
     },
     {
         "name":"White",
-        "link":""
+        "audio":"",
+        "photo":"",
     },
     {
         "name":"Gray",
-        "link":""
+        "audio":"",
+        "photo":"",
     },
 ]
 
+export default function getColorData() {
+    return color;
+  }
 
-
-https://drive.google.com/file/d/1yB_YjDXD-Aaptq13RfnHl9N484Iop25m/view?usp=sharing
+// https://drive.google.com/file/d/1yB_YjDXD-Aaptq13RfnHl9N484Iop25m/view?usp=sharing
 
 {/* <ReactAudioPlayer
 src="https://drive.google.com/uc?export=download&id=Aaptq13RfnHl9N484Iop25m"
