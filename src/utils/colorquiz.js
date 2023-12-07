@@ -14,8 +14,8 @@ const colors =[
     "white",
     "yellow",
     "purple",
-    "grey",
-    "vilot",
+    "gray",
+    "violet",
 
 ];
 

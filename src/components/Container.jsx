@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Lesson from './pages/Lesson';
 import Footer from './pages/Footer';
 import About from './pages/About';
+import Quiz from './pages/Quiz';
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState('Home');
@@ -17,6 +18,9 @@ export default function PortfolioContainer() {
     }
     if (currentPage === 'Lesson') {
       return <Lesson />;
+    }    
+    if (currentPage === 'Quiz') {
+      return <Quiz />;
     }
     return <Home />;
   };
@@ -27,7 +31,6 @@ export default function PortfolioContainer() {
     <div>
       <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
       <main className="mx-3">{renderPage()}</main>
-
       <Footer></Footer>
     </div>
     

@@ -7,17 +7,17 @@ const color = [
     {
         "name":"Red",
         "audio":"",
-        "photo":"",
+        "photo":"./color/red.png",
     },
     {
         "name":"Blue",
         "audio":"",
-        "photo":"",
+        "photo":"./color/blue.png",
     },
     {
         "name":"Yellow",
         "audio":"",
-        "photo":"",
+        "photo":"./color/yellow.png",
     },
     {
         "name":"Secondary Color",
@@ -27,17 +27,17 @@ const color = [
     {
         "name":"Purple",
         "audio":"",
-        "photo":"",
+        "photo":"./color/purple.png",
     },
     {
         "name":"Green",
         "audio":"",
-        "photo":"",
+        "photo":"./color/green.png",
     },
     {
         "name":"Orange",
         "audio":"",
-        "photo":"",
+        "photo":"./color/orange.png",
     },
     {
         "name":"Neutral Color",
@@ -47,28 +47,20 @@ const color = [
     {
         "name":"Black",
         "audio":"",
-        "photo":"",
+        "photo":"./color/black.png",
     },
     {
         "name":"White",
         "audio":"",
-        "photo":"",
+        "photo":"./color/white.png",
     },
     {
         "name":"Gray",
         "audio":"",
-        "photo":"",
+        "photo":"./color/gray.png",
     },
 ]
 
 export default function getColorData() {
     return color;
   }
-
-// https://drive.google.com/file/d/1yB_YjDXD-Aaptq13RfnHl9N484Iop25m/view?usp=sharing
-
-{/* <ReactAudioPlayer
-src="https://drive.google.com/uc?export=download&id=Aaptq13RfnHl9N484Iop25m"
-onPlay	
-controls
-/> */}

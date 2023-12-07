@@ -7,7 +7,7 @@ const colorSentences = [
     {
         "name":"My favorite color is Yellow",
         "link":"https://drive.google.com/uc?export=download&id=1EgSDkHnkB3hzKve4WI6ME5FvWF8sXrtG",
-        "photo":""
+        "photo":"./color/yellow.png"
     },
     {
         "name":"The apple is red.",

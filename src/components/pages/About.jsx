@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <Container>
       <Row>
-        <div>About me</div>
+        <div>About</div>
       </Row>
     </Container>
   );

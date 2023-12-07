@@ -23,6 +23,10 @@ function NavTabs({ currentPage, handlePageChange }) {
         <Nav.Link onClick={() => handlePageChange('Lesson')} className={currentPage === 'Lesson' ? 'nav-link active' : 'nav-link'}>
           Lesson
         </Nav.Link>
+        
+        <Nav.Link onClick={() => handlePageChange('Quiz')} className={currentPage === 'Quiz' ? 'nav-link active' : 'nav-link'}>
+        Quiz
+        </Nav.Link>
 
       </Nav>
     </Container>
